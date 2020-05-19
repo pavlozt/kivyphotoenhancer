@@ -40,7 +40,8 @@ class ConvertApp(App):
         self.files = []
         Window.bind(on_dropfile=self.handledrops)
         self.title='Загрузка фото заказа'
-        os.mkdir(outputdir)
+        if not os.path.exists(outputdir):
+            os.mkdir(outputdir)
 
     def handledrops(self, *args):
         for func in self.drops:
