@@ -70,7 +70,7 @@ class ConvertApp(App):
             # запуск программы из пакета imagemagick с параметром -auto-level
             # результирующий файл записывается в каталог out
             subprocess.call([imagickexe, fullname, '-colorspace', 'Lab', '-channel', str(
-                0), '-auto-level', '+channel', '-colorspace', 'sRGB', 'out/'+filename])
+                0), '-auto-level', '+channel', '-colorspace', 'sRGB', outputdir + '/'+filename])
             p += 1
             self.update_progress(p)
 
