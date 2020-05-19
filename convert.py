@@ -96,7 +96,7 @@ if platform in ('linux', 'win', 'macosx'):
     width = 300
     Config.set('kivy', 'keyboad_mode', 'system')
     Config.set('graphics', 'desktop', '1')
-    #Config.set('graphics','resizable',0)
+    Config.set('graphics','resizable',1)
     Config.set('graphics', 'width', width)
     Config.set('graphics', 'height', int(width*2.16))
 
