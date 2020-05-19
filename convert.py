@@ -31,14 +31,10 @@ class DropFileArea(Button):
             # Добавить имя файла в глобальный массив на обработку
 
 # все окно приложения
-
-
 class DropLayout(BoxLayout):
     pass
 
 # приложение, обрабатывающее закинутые в него файлы
-
-
 class ConvertApp(App):
     def build_config(self, config):
         self.drops = []
@@ -96,7 +92,7 @@ class ConvertApp(App):
         self.root.ids.fileslist.text = ''
 
 
-
+# декстоп-стайл инциализация окна
 if platform in ('linux', 'win', 'macosx'):
     width = 300
     Config.set('kivy', 'keyboad_mode', 'system')
