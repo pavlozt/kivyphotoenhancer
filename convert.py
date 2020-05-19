@@ -12,6 +12,7 @@ import subprocess
 import os
 
 imagickexe = r'C:\Program Files\ImageMagick-7.0.8-Q16\magick.exe'
+outputdir = 'out'
 
 class DropFileArea(Button):
     # Специальная инциализация кнопки-области куда кидают файлы
@@ -39,6 +40,7 @@ class ConvertApp(App):
         self.files = []
         Window.bind(on_dropfile=self.handledrops)
         self.title='Загрузка фото заказа'
+        os.mkdir(outputdir)
 
     def handledrops(self, *args):
         for func in self.drops:
