@@ -14,7 +14,9 @@ DropLayout:
         size_hint: 1,0.75
         id: droparea
         disabled: True
-        text: "Переместите файлы на поле"
+        halign: 'center'
+        valign: 'bottom'
+        text: "Drag-n-Drop Here \n Переместите файлы на поле"
     ProgressBar:
         size_hint: 1,0.05
         id: progress
@@ -23,5 +25,5 @@ DropLayout:
         id: uploadbutton
         size_hint: 1,0.2
         pos_hint : {'bottom': 0.05, 'center_x' : 0.5}
-        text: 'Загрузка'
+        text: 'Upload / Загрузка'
         on_press: app.do_upload()
