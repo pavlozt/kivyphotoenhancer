@@ -13,3 +13,6 @@ This version do “auto-levels" on photo. Files are saved in the "out" directory
  Вы можете сделать на его базе загрузчик фото для автоматизированного рабочего места на производстве или что-то подобное.
 
  Текущая версия "вытягивает" фото по методу auto-levels. Файлы сохраняются в каталог out.
+
+
+ ![](screenshots)/screen1.png
