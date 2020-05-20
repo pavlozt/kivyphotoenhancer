@@ -15,4 +15,4 @@ This version do “auto-levels" on photo. Files are saved in the "out" directory
  Текущая версия "вытягивает" фото по методу auto-levels. Файлы сохраняются в каталог out.
 
 
- ![](screenshots)/screen1.png
+ ![](screenshots/screen1.png)
